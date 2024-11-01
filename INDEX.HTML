@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmol Singh | Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #f0f4f8, #c2d3e9);
+    color: #333;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #222;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #4CAF50;
+    left: 50%;
+    bottom: -4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+section h1, section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Skills Section */
+#skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+#skills li {
+    font-size: 1rem;
+    color: #333;
+    background: linear-gradient(135deg, #4CAF50, #009688);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Projects Section */
+.project {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.project p {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+/* Experience Section */
+#experience p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+#contact p, #contact a {
+    color: #333;
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+#contact a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* General Button Styles */
+button, nav ul li a {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+button {
+    background: linear-gradient(135deg, #4CAF50, #009688);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #009688, #4CAF50);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Add Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #skills ul {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 40px 20px;
+        margin: 20px;
+    }
+}
+
+</style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>Hello, I'm Anmol Singh</h1>
+        <p>A BTech CSE first-year student at Lovely Professional University, passionate about coding and technology.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 style="background-color: red;">Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Data Structures</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 style="background-color: red;">Projects</h2>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website built with HTML and CSS to showcase my projects.</p>
+        </div>
+        <div class="project">
+            <h3>Weather App</h3>
+            <p>A simple weather app that displays current weather using an API.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 style="background-color: red;">Experience</h2>
+        <p>Currently seeking internship opportunities to gain hands-on experience in software development.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 style="background-color: red;">Contact</h2>
+        <p>Email : anmolsingh27122006@gmail.com</p>
+        <p><contact>Contact : 9001518147</contact><a href="#"></a></p>
+    </section>
+</body>
+</html>
+
+</body>
+</html>
